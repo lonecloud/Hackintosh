@@ -1,0 +1,2 @@
+# Hackintosh
+HackIntosh of GIGABYT EB250M +I5 7500+HD630+ALC887
