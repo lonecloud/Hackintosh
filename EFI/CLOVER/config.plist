@@ -89,6 +89,8 @@
 			<dict>
 				<key>#Comment-IRQ Fix</key>
 				<string>The following fixes may be needed for onboard audio/USB/etc</string>
+				<key>AddDTGP</key>
+				<true/>
 			</dict>
 			<key>Patches</key>
 			<array>
@@ -233,6 +235,10 @@
 					</data>
 				</dict>
 			</array>
+			<key>SlpSmiAtWake</key>
+			<true/>
+			<key>SuspendOverride</key>
+			<true/>
 		</dict>
 		<key>DropTables</key>
 		<array>
@@ -246,6 +252,8 @@
 			</dict>
 		</array>
 		<key>FixHeaders</key>
+		<true/>
+		<key>HaltEnabler</key>
 		<true/>
 		<key>PatchesDSDT</key>
 		<array/>
@@ -275,7 +283,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>debug=0x100 -disablegfxfirmware -lilubetaall darkwake=8</string>
+		<string>-lilubetaall debug=0x100 -disablegfxfirmware -v darkwake=8</string>
 		<key>CustomLogo</key>
 		<string>Apple</string>
 		<key>DefaultVolume</key>
@@ -453,12 +461,12 @@
 		<key>PatchVBiosBytes</key>
 		<array/>
 		<key>ig-platform-id</key>
-		<string>0x19160000</string>
+		<string>0x191b0000</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
 		<key>AppleIntelCPUPM</key>
-		<true/>
+		<false/>
 		<key>AppleRTC</key>
 		<true/>
 		<key>DellSMBIOSPatch</key>
@@ -738,6 +746,10 @@
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
+		<key>ROM</key>
+		<data>
+		HBsNpQsS
+		</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
@@ -752,7 +764,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02732700GUDNJLFB</string>
+		<string>C02752701GUH69FAD</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -784,7 +796,9 @@
 		<key>ProductName-Comment</key>
 		<string>Using Haswell MacBookAir6,2 until Clover has support for KabyLake identifiers</string>
 		<key>SerialNumber</key>
-		<string>C02V64VZH7JY</string>
+		<string>C02VWJZ4H7JY</string>
+		<key>SmUUID</key>
+		<string>221F35C9-4472-4F58-87FF-5A884162DFB8</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
@@ -792,6 +806,8 @@
 	<dict>
 		<key>#BacklightLevel</key>
 		<integer>0</integer>
+		<key>CustomUUID</key>
+		<string>0AD6DB1D-3211-4439-B8DB-955C643FE108</string>
 		<key>InjectSystemID</key>
 		<true/>
 		<key>XMPDetection</key>
